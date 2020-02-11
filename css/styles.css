@@ -1,0 +1,124 @@
+.qservice {
+	
+}
+.qservice a {
+	width: 320px;
+	border-radius: 10px;
+	background-color: #fff;
+	display: inline-block;
+	/*padding: 25px 25px;*/
+	line-height: 40px;
+	margin-left: 15px;
+	min-height: 128px;
+}
+#serviceName {
+
+}
+#inQueue {
+	font-size: 18px;
+}
+#SetQueue {
+	text-decoration: none;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.service {
+	padding-top: 21px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#prefix {
+	color: #000;
+	font-size: 84px;
+	font-weight: bold;
+
+}
+#number {
+	color: #000;
+	font-size: 84px;
+	font-weight: bold;
+}
+#weightYourNumber {
+	text-align: center;
+}
+#SubQueue {
+	min-width: 310px;
+	background: url(../img/down_bl.png) no-repeat;
+	background-position: 99% 60%;
+	background-color: #fff;
+	padding-right: 25px;
+	font-size: 24px;
+}
+.appoint {
+
+}
+#timeCounter {
+	margin-top: 20px;
+
+}
+#return{
+	color: #fff;
+	background: #337ab7;
+	border-radius: 10px;
+	padding: 10px;
+}
+#Qservices {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.parent{
+	display: inline-flex;
+}
+#recordOnline {
+	font-size: 32pt;
+	padding: 10px;
+}
+/* Убрать неподшитые закладки */
+#appmenu_bookmarks .hide-if-empty-places-result,
+#bookmarksMenu .hide-if-empty-places-result,
+#BMB_bookmarksToolbar,
+#BMB_bookmarksToolbar + menuseparator,
+#BMB_subscribeToPageMenuitem,
+#BMB_subscribeToPageMenupopup,
+#BMB_bookmarksPopup menuseparator:nth-last-child(2),
+#BMB_viewBookmarksToolbar,
+#BMB_bookmarksPopup > menuseparator:nth-child(2),
+#BMB_bookmarksShowAll,
+#BMB_bookmarksPopup > menuseparator:nth-child(4),
+#BMB_bookmarkThisPage,
+#BMB_bookmarksPopup > menuseparator:nth-child(8),
+#BMB_bookmarksPopup > menu:nth-child(11),
+#BMB_bookmarksPopup > menu:nth-child(12),
+#BMB_bookmarksPopup > menu:nth-child(13) {
+display: none !important;
+}
+#appmenu_unsortedBookmarks,
+#menu_unsortedBookmarks,
+#BMB_unsortedBookmarks {
+visibility: hidden !important;
+}
+statuspanel, statuspanel:hover, #appmenu-button
+{display: none !important;}
+#blocker {
+	position: absolute;
+	background: #fff;
+	top: 5%;
+	bottom: 5%;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 90%;
+	z-index: 100;
+	border-radius: 20px;
+}
+#breakfast {
+	color:red;
+	font-size: 114px;
+	padding-top: 30%;
+	font-weight: bold;
+	position: relative;
+	top:30%;
+}

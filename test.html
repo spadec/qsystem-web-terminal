@@ -1,0 +1,16 @@
+<script>
+	function readFile(object) {
+  var file = object.files[0];
+ //var file = object;
+  var reader = new FileReader();
+  reader.onload = function() {
+    document.getElementById('out').innerHTML = reader.result;
+  }
+  reader.readAsText(file);
+  console.log(object);
+}
+	
+</script>	
+<input type="file" id="file">
+<button onclick="readFile(document.getElementById('file'))">Read!</button>
+<div id="out"></div>

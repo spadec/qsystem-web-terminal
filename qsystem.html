@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<title>КГП на ПХВ «Областной кожно-венерологический диспансер» КГУ «УЗ акимата СКО»</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" media="print" type="text/css" href="css/print.css" />
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<style>html { background-color: #fff; } .g-recaptcha div { width:auto; height:auto; }
+	</style>
+</head>
+
+<body> 
+	<div id="body" onselectstart="return false" onmousedown="return false">
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="lang">
+						<span id="langselect">Выбор языка:&nbsp;</span>
+						<a class="lang-switch" id="kz" >KZ</a>
+						<a class="lang-switch" id="ru" >RU</a>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<h3 id="clinic">Медицинская информационная система &laquoНАДЕЖДА&raquo, разработчик ИП &laquoPROFit&raquo</h3>
+				<div class="parent" id="back"><div class="child"><h1 id="recordOnline">Выберите услугу ></h1></div>
+					<div align="left"><img src="img/delete1.png" style="color:#fff"></div></div>
+										<div class="col-md-12" id="blocker" style="display:none;"><span id="breakfast">Перерыв на обед!</span></div>
+				<div class="col-md-12" id="Qservices">
+					<i class="fa fa-spinner fa-spin fa-3x fa-fw" id="loading" style="display:none;"></i>
+
+				</div>
+				<div class="col-md-6 col-md-offset-3 descript ">
+					<div class="alert" id="error" style="display:none;">
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						<span id="ernote">Текст ошибки</span>
+					</div> 
+				</div>
+				<div class="col-md-6 col-md-offset-3 " id="mainform" style="display:none;">
+					<div class="talon" id="talon">
+						<h2 align="center">Услуга:<span class="service">Регистратура</span></h2>
+						<p align="center"><span id="service">Ваш номер:</span></p>
+						<div class="text-center" ><span id="prefix">Р</span><span id="number">1</span></div>
+						<input type="hidden" id="language" name="language" value="" /><!-- В value язык по умолчанию 1-рус 2-каз -->
+						<p><span id="labelTime">Время: </span><span id="dateTime"></span></p>
+						<p id="weightYourNumber">Ожидайте вызова вашего номера на табло</p>
+						<div class="alert" id="t_error" style="display:none;">
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+							<span id="t_ernote">Текст ошибки</span>
+						</div>
+						<div class="success" id="success" style="display:none;">
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+							<span id="t_scnote">Текст успешного выполнения</span>
+						</div> 	
+						<div style="font-size: 24px; line-height: 1.5em;" style="display:none;" id="PrintBlock">
+							<div id="timeCounter"><a id="return">Вернуться на главную через:</a> <span id="timer_inp">10</span> сек.</div>
+						</div>
+					</div>
+					<div class="talon-footer"></div>
+				</div>	
+			</div>
+		</div>		
+	</div>
+	</div>
+	<div class="footer hidden-xs">
+		<div class="container text-center">
+			<p id="footer">Медицинская информационная система «НАДЕЖДА», разработчик ИП «PROFit»</p>
+		</div>
+	</div>
+	<script src="js/scripts.min.js"></script>
+	<script src="js/print.min.js"></script>
+	<script src="js/qsystem.js"></script>
+
+	<script>
+		$("#info").click(function(){
+			$( "#available" ).toggle( "fast", function() {
+
+			});
+		});
+	</script>
+	<!--<link rel="stylesheet" href="css/poorvision.css">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+</body>
+</html>
